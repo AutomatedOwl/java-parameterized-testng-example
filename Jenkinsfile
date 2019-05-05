@@ -34,7 +34,7 @@ pipeline {
             }
             steps {
                 container('k8s-slave-jdk12-alpine') {
-                    sh ${params.MVN_STRING}
+                    sh "${params.MVN_STRING}"
                 }
             }
         }
